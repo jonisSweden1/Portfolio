@@ -1,6 +1,7 @@
 {
   "name": "vite-template-redux",
   "private": true,
+  "homepage": "https://jonisSweden1.github.io/Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,11 +14,14 @@
     "preview": "vite preview",
     "start": "vite",
     "test": "vitest --run",
-    "type-check": "tsc -b --noEmit"
+    "type-check": "tsc -b --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
