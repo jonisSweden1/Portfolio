@@ -1,7 +1,7 @@
 {
   "name": "vite-template-redux",
   "private": true,
-  "homepage": "https://jonisSweden1.github.io/Portfolio/",
+  "homepage": "https://jonisSweden1.github.io/jonis-portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
