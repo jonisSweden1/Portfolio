@@ -13,7 +13,7 @@ import logo from './Logo_portfolio.png'
 
 export const App = () => (
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="jonis-portfolio">
       <Navbar>
           <NavbarBrand>
             <Link to="/">
