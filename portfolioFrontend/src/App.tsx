@@ -1,15 +1,15 @@
 import { Provider } from "react-redux"
 import "./App.css"
-import facebook_icon from './facebook-square-black-icon.svg'
-import x_icon from './x-social-media-round-icon.svg'
-import linkedIn_icon from './linkedin-square-icon.svg'
-import github_icon from './github-icon.svg'
+import facebook_icon from './images/facebook-square-black-icon.svg'
+import x_icon from './images/x-social-media-round-icon.svg'
+import linkedIn_icon from './images/linkedin-square-icon.svg'
+import github_icon from './images/github-icon.svg'
 import { HomePage } from "./sides/Home"
 import { AboutPage } from "./sides/About"
 import { store } from "./app/store"
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { Nav, NavItem, NavbarBrand, Navbar, NavLink } from "react-bootstrap"
-import logo from './Logo_portfolio.png'
+import logo from './images/Logo_portfolio.png'
 
 export const App = () => (
   <Provider store={store}>
