@@ -11,7 +11,7 @@
     "format": "prettier --write .",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --port 8080",
     "start": "vite",
     "test": "vitest --run",
     "type-check": "tsc -b --noEmit",
