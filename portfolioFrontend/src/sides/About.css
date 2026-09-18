@@ -2,6 +2,10 @@
     height: 298px;
     background-color: #737373;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #aboutUpperSection h1 {

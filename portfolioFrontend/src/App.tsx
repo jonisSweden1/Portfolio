@@ -10,6 +10,7 @@ import { store } from "./app/store"
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { Nav, NavItem, NavbarBrand, Navbar, NavLink } from "react-bootstrap"
 import logo from './images/Logo_portfolio.png'
+import { PortfolioPage } from "./sides/Portfolio"
 
 export const App = () => (
   <Provider store={store}>
@@ -66,6 +67,7 @@ export const App = () => (
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/portfolio" element={<PortfolioPage/>}/>
         </Routes>
     </BrowserRouter>
   </Provider>
