@@ -12,6 +12,7 @@ import { Nav, NavItem, NavbarBrand, Navbar, NavLink } from "react-bootstrap"
 import logo from './images/Logo_portfolio.png'
 import { PortfolioPage } from "./sides/PortfolioPage"
 import { FeaturedPage } from "./sides/FeaturedPage"
+import { BlogPage } from "./sides/BlogPage"
 
 export const App = () => (
   <Provider store={store}>
@@ -70,6 +71,7 @@ export const App = () => (
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/featured" element={<FeaturedPage/>}/>
           <Route path="/portfolio" element={<PortfolioPage/>}/>
+          <Route path="/blog" element={<BlogPage/>}/>
         </Routes>
 
         <footer>

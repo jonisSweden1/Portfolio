@@ -13,7 +13,7 @@ export default function ProjectCard({
   description: string
   url: string}) {
     return (
-        <Card style={{width: '18rem'}}>
+        <Card style={{width: '18rem', boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.2)"}}>
           <CardImg variant="top" src={imgSrc}/>
           <CardHeader>
             <CardTitle>{title} : {author}</CardTitle>

@@ -37,16 +37,29 @@ nav {
   box-shadow: 5px inset;
 }
 
-#main-section img {
-  margin-top: 60px;
+#main-section .image-cropper {
+  margin-top: 50px;
   width: 545px;
+  height: 545px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 300px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#main-section .image-cropper img {
+  display:inline;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  zoom: 150%;
 }
 
 #main-section p {
   font-size: 57px; 
   color: white; 
   font-family: "Roboto";
-  text-shadow: 1px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #home-gradient-transition {

@@ -1,6 +1,6 @@
 import "./HomePage.css"
 import background from '../images/Soothing-nature-backgrounds-2.jpg'
-import profile from '../images/cropped_circle_image.png'
+import profile from '../images/J_Öland_foto.jpg'
 import ProjectCard from "../components/project.tsx"
 import { projects } from "../data/projects.ts"
 
@@ -14,7 +14,9 @@ export function HomePage() {
   return(
     <div id="background" style={{backgroundImage: `url(${background})`}}>
       <section id="main-section">
-        <img src={profile}/>
+        <div className="image-cropper">
+          <img src={profile}/>
+        </div>
         <p>Game Developer, Software Engineer</p>
       </section>
 
