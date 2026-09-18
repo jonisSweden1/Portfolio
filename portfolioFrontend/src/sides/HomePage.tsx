@@ -1,7 +1,7 @@
 import "./HomePage.css"
 import background from '../images/Soothing-nature-backgrounds-2.jpg'
 import profile from '../images/cropped_circle_image.png'
-import ProjectCard from "../components/projects.tsx"
+import ProjectCard from "../components/project.tsx"
 import { projects } from "../data/projects.ts"
 
 export function HomePage() {

@@ -43,12 +43,12 @@ export const App = () => (
 
           <Nav id="navBarRightSection">
             <NavItem>
-              <NavLink href="">
+              <NavLink href="https://www.facebook.com/jonathan.sandstrom.92/">
                 <img src={facebook_icon} alt="facebook_logo" width={50}/>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">
+              <NavLink href="https://x.com/Jonatha09268632">
                 <img src={x_icon} alt="x_logo" width={50}/>
               </NavLink>
             </NavItem>
@@ -71,6 +71,32 @@ export const App = () => (
           <Route path="/featured" element={<FeaturedPage/>}/>
           <Route path="/portfolio" element={<PortfolioPage/>}/>
         </Routes>
+
+        <footer>
+          <div style={{backgroundColor:"gray", display: "flex", height: "60px", alignItems: 'center'}}>
+            <p>© Jonathan Sandström</p>
+            <Navbar>
+              <Nav id="navBarFooter" className="text-white" >
+            <NavItem >
+              <Link to="/about">About</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/featured">Featured</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/portfolio">Portfolio</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/blog">Blog</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/contact">Contact</Link>
+            </NavItem>
+          </Nav>
+            </Navbar>
+            
+          </div>
+        </footer>
     </BrowserRouter>
   </Provider>
 )

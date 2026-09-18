@@ -1,0 +1,13 @@
+#project-section {
+  background-color: #C3C3C3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 10px;
+}
+
+#project-section .project-wrapper {
+  display: flex; 
+  flex-flow: row wrap; 
+  row-gap: 50px;
+  column-gap: 30px;
+}
