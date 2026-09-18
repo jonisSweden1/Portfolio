@@ -1,4 +1,4 @@
-import "./Home.css"
+import "./HomePage.css"
 import background from '../images/Soothing-nature-backgrounds-2.jpg'
 import profile from '../images/cropped_circle_image.png'
 import ProjectCard from "../components/projects.tsx"
@@ -8,7 +8,7 @@ export function HomePage() {
   const projectsData = projects.sort((n1, n2) => n1.getId() - n2.getId())
 
   const projectCards = projectsData.map(project => 
-    <ProjectCard key={project.getId()} imgSrc={project.getImageUrl()} title={project.getTitle()} description={project.getDescription()} url={project.getUrl()}/>
+    <ProjectCard key={project.getId()} imgSrc={project.getImageUrl()} title={project.getTitle()} author={project.getAuthor()} description={project.getDescription()} url={project.getUrl()}/>
   );
 
   return(

@@ -1,4 +1,4 @@
-import "./About.css"
+import "./AboutPage.css"
 
 export const AboutPage = () => (
     <div>

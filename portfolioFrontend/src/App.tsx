@@ -4,13 +4,14 @@ import facebook_icon from './images/facebook-square-black-icon.svg'
 import x_icon from './images/x-social-media-round-icon.svg'
 import linkedIn_icon from './images/linkedin-square-icon.svg'
 import github_icon from './images/github-icon.svg'
-import { HomePage } from "./sides/Home"
-import { AboutPage } from "./sides/About"
+import { HomePage } from "./sides/HomePage"
+import { AboutPage } from "./sides/AboutPage"
 import { store } from "./app/store"
 import { BrowserRouter, Link, Route, Routes } from "react-router"
 import { Nav, NavItem, NavbarBrand, Navbar, NavLink } from "react-bootstrap"
 import logo from './images/Logo_portfolio.png'
-import { PortfolioPage } from "./sides/Portfolio"
+import { PortfolioPage } from "./sides/PortfolioPage"
+import { FeaturedPage } from "./sides/FeaturedPage"
 
 export const App = () => (
   <Provider store={store}>
@@ -67,6 +68,7 @@ export const App = () => (
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/featured" element={<FeaturedPage/>}/>
           <Route path="/portfolio" element={<PortfolioPage/>}/>
         </Routes>
     </BrowserRouter>
